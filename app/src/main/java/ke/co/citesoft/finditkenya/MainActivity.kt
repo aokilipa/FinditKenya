@@ -1,7 +1,7 @@
 package ke.co.citesoft.finditkenya
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import ke.co.citesoft.finditkenya.ui.main.MainFragment
 
 class MainActivity : AppCompatActivity() {
