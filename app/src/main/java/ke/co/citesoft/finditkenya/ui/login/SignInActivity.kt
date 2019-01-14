@@ -1,7 +1,6 @@
 package ke.co.citesoft.finditkenya.ui.login
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -14,9 +13,9 @@ import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.GoogleAuthProvider
-import ke.co.citesoft.finditkenya.MainActivity
+import ke.co.citesoft.finditkenya.ui.main.MainActivity
 import ke.co.citesoft.finditkenya.R
-import ke.co.citesoft.finditkenya.ui.BaseActivity
+import ke.co.citesoft.finditkenya.ui.base.BaseActivity
 import kotlinx.android.synthetic.main.activity_sign_in.*
 
 class SignInActivity : BaseActivity(), View.OnClickListener {

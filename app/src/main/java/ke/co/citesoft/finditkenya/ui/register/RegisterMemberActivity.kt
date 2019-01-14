@@ -3,8 +3,9 @@ package ke.co.citesoft.finditkenya.ui.register
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import ke.co.citesoft.finditkenya.R
+import ke.co.citesoft.finditkenya.ui.base.BaseActivity
 
-class RegisterMemberActivity : AppCompatActivity() {
+class RegisterMemberActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

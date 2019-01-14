@@ -1,4 +1,4 @@
-package ke.co.citesoft.finditkenya.ui
+package ke.co.citesoft.finditkenya.ui.base
 
 import android.app.ProgressDialog
 import android.content.Context
