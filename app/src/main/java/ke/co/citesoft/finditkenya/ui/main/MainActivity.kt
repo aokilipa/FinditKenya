@@ -49,11 +49,11 @@ class MainActivity : BaseActivity() {
         // Launch second activity, pass part ID as string parameter
         if(itemList.Title.equals("Member Inquiry")){
             val intent = Intent(this, MemberInquiryActivity::class.java)
-            intent.putExtra(Intent.EXTRA_TEXT, itemList.Title)
+            //intent.putExtra(Intent.EXTRA_TEXT, itemList.Title)
             startActivity(intent)
         } else{
             val intent = Intent(this, MemberRegistrationActivity::class.java)
-            intent.putExtra(Intent.EXTRA_TEXT, itemList.Title)
+            //intent.putExtra(Intent.EXTRA_TEXT, itemList.Title)
             startActivity(intent)
         }
 

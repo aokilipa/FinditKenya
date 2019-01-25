@@ -29,12 +29,12 @@ class MemberRegistrationActivity : BaseActivity() {
             id = bundle.getString("docId","")
 
             et_fullName.setText(bundle.getString("fullName"))
-            et_phoneNumber.setText(bundle.getInt("phoneNumber"))
-            et_telNumber.setText(bundle.getInt("telNumber"))
+            et_phoneNumber.setText(bundle.getInt("phoneNumber").toString())
+            et_telNumber.setText(bundle.getInt("telNumber").toString())
             et_occupation.setText(bundle.getString("occupation"))
             et_email.setText(bundle.getString("email"))
             et_postalAddress.setText(bundle.getString("postalAddress"))
-            et_postalCode.setText(bundle.getInt("postalCode"))
+            et_postalCode.setText(bundle.getInt("postalCode").toString())
             et_location.setText(bundle.getString("location"))
 
         }
