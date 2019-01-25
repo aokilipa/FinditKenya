@@ -14,8 +14,8 @@ open class BaseActivity  : AppCompatActivity() {
         ProgressDialog(this)
     }
 
-    fun showProgressDialog() {
-        progressDialog.setMessage(getString(R.string.loading))
+    fun showProgressDialog(msg: String) {
+        progressDialog.setMessage(msg) //getString(R.string.loading)
         progressDialog.isIndeterminate = true
         progressDialog.show()
     }

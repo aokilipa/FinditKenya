@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.Toast
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
@@ -69,6 +70,7 @@ class SignInActivity : BaseActivity(), View.OnClickListener {
             } catch (e: ApiException) {
                 // Google Sign In failed, update UI appropriately
                 Log.w(TAG, "Google sign in failed", e)
+                Toast.makeText(this,"Google sign in failed", Toast.LENGTH_SHORT).show()
                 // [START_EXCLUDE]
                 updateUI(null)
                 // [END_EXCLUDE]
@@ -81,7 +83,7 @@ class SignInActivity : BaseActivity(), View.OnClickListener {
     private fun firebaseAuthWithGoogle(acct: GoogleSignInAccount) {
         Log.d(TAG, "firebaseAuthWithGoogle:" + acct.id!!)
         // [START_EXCLUDE silent]
-        showProgressDialog()
+        showProgressDialog("loading...")
         // [END_EXCLUDE]
 
         val credential = GoogleAuthProvider.getCredential(acct.idToken, null)

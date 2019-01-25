@@ -2,16 +2,12 @@ package ke.co.citesoft.finditkenya.ui.main
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.MenuItem
-import android.widget.Switch
-import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import ke.co.citesoft.finditkenya.R
 import ke.co.citesoft.finditkenya.data.model.Items
 import ke.co.citesoft.finditkenya.ui.base.BaseActivity
 import ke.co.citesoft.finditkenya.ui.inquiry.MemberInquiryActivity
-import ke.co.citesoft.finditkenya.ui.register.RegisterMemberActivity
+import ke.co.citesoft.finditkenya.ui.register.MemberRegistrationActivity
 import kotlinx.android.synthetic.main.main_activity.*
 import java.util.ArrayList
 
@@ -56,7 +52,7 @@ class MainActivity : BaseActivity() {
             intent.putExtra(Intent.EXTRA_TEXT, itemList.Title)
             startActivity(intent)
         } else{
-            val intent = Intent(this, RegisterMemberActivity::class.java)
+            val intent = Intent(this, MemberRegistrationActivity::class.java)
             intent.putExtra(Intent.EXTRA_TEXT, itemList.Title)
             startActivity(intent)
         }

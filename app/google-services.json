@@ -23,6 +23,14 @@
           }
         },
         {
+          "client_id": "462811947351-k6oog28r4i2la9mevla3ffs2dcju2sj1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ke.co.citesoft.finditkenya",
+            "certificate_hash": "aacbbc8addf50abf397346cc039940eb2f9a9f51"
+          }
+        },
+        {
           "client_id": "462811947351-mhfsen06v93lmv09654u4e4kb39msvik.apps.googleusercontent.com",
           "client_type": 3
         }

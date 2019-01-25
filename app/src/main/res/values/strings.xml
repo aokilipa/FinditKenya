@@ -3,5 +3,5 @@
     <string name="signin_label">Please sign in to continue</string>
     <string name="sign_in_using_google">Sign in using your google account</string>
     <string name="example_email">example@email.com</string>
-    <string name="loading">loading...</string>
+    <string name="loading">loading...</string>.
 </resources>

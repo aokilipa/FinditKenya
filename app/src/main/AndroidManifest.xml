@@ -12,22 +12,22 @@
             android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity android:name=".ui.main.MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
-        </activity>
-        <activity android:name=".ui.login.SignInActivity">
             <!--<intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>-->
         </activity>
+        <activity android:name=".ui.login.SignInActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
         <activity android:name=".ui.inquiry.MemberInquiryActivity">
         </activity>
-        <activity android:name=".ui.register.RegisterMemberActivity">
+        <activity android:name=".ui.register.MemberRegistrationActivity">
         </activity>
     </application>
 
